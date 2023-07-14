@@ -1,0 +1,22 @@
+.statistics {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.stat__list {
+  display: flex;
+  border-top: 1px solid #adadac;
+}

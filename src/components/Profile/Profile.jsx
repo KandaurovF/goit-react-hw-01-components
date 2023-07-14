@@ -16,7 +16,7 @@ export const Profile = ({
         <p className={css.location}>{location}</p>
       </div>
 
-      <ul className={`${css.stats} ${'list'}`}>
+      <ul className={`${css.stats} list`}>
         <li>
           <span className={css.label}>followers</span>
           <span className={css.quantity}>{followers}</span>

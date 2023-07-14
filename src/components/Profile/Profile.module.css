@@ -39,10 +39,6 @@
 }
 
 .stats {
-  /* margin: 0;
-  padding: 0;
-  list-style: none; */
-
   display: flex;
   border-top: 1px solid #adadac;
   background-color: rgb(215, 219, 251);
