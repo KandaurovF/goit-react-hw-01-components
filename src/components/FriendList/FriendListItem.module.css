@@ -1,0 +1,38 @@
+.item {
+  padding: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.item > img {
+  border: 1px solid #adadac;
+  border-radius: 5px;
+}
+
+.name {
+  font-size: 21px;
+}
+
+.status {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+.onLine {
+  background-color: green;
+}
+
+.offLine {
+  background-color: red;
+}

@@ -8,19 +8,19 @@ export const Statistics = ({ title, stats }) => {
       {title ? <h2 className={css.title}>{title}</h2> : null}
 
       <ul className={`${css.stat__list} list`}>
-        {
-          // stats.reduce((accumulator, { id, label, percentage }) => {
-          //   const existingItem = accumulator.find(item => item.label === label);
+        {stats
+          .reduce((accumulator, { id, label, percentage }) => {
+            const existingItem = accumulator.find(item => item.label === label);
 
-          //   if (existingItem) {
-          //     existingItem.percentage += percentage;
-          //   } else {
-          //     accumulator.push({ id, label, percentage });
-          //   }
+            if (existingItem) {
+              existingItem.percentage += percentage;
+            } else {
+              accumulator.push({ id, label, percentage });
+            }
 
-          //   return accumulator;
-          // }, [])
-          stats.map(({ id, label, percentage }) => {
+            return accumulator;
+          }, [])
+          .map(({ id, label, percentage }) => {
             return (
               <StatisticsItem
                 key={id}
@@ -29,8 +29,7 @@ export const Statistics = ({ title, stats }) => {
                 style={{ backgroundColor: GenerateColor() }}
               />
             );
-          })
-        }
+          })}
       </ul>
     </section>
   );
