@@ -1,0 +1,30 @@
+.transaction__history {
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);
+  border-collapse: collapse;
+}
+
+.transaction__history > thead {
+  text-transform: uppercase;
+  color: white;
+}
+
+.transaction__history > thead > tr > th {
+  font-weight: 400;
+  border: 1px solid #ccc;
+  background-color: #5076cf;
+}
+
+.transaction__history > tbody > tr > td {
+  border: 1px solid #ccc;
+}
+
+.transaction__history > tbody > tr > td:not(:first-child) {
+  text-align: center;
+}
+
+.transaction__history > tbody > tr > td:first-child {
+  padding-left: 10px;
+}
