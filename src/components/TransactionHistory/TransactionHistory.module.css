@@ -17,6 +17,10 @@
   background-color: #5076cf;
 }
 
+.transaction__history > tbody > tr:nth-child(even) > td {
+  background-color: #f2f2f2;
+}
+
 .transaction__history > tbody > tr > td {
   border: 1px solid #ccc;
 }
